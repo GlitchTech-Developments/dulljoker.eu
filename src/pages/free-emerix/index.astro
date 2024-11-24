@@ -1,0 +1,32 @@
+---
+
+---
+
+<script type="module" async>
+	const url = new URL("https://www.youtube.com/watch?v=BT9h5ifR1tY&t=1s");
+	const disabledRedirect = url.searchParams.get("disabledRedirect");
+	if (disabledRedirect !== "true") {
+		window.location.assign(url);
+	} else {
+		console.warn(
+			"Redirect is disabled. You will not be redirected to the video."
+		);
+	}
+</script>
+
+<link
+	rel="preload"
+	href="https://www.youtube.com/watch?v=BT9h5ifR1tY&t=1s"
+	as="video"
+	crossorigin="anonymous"
+/>
+<link
+	rel="dns-prefetch"
+	href="https://www.youtube.com/watch?v=BT9h5ifR1tY&t=1s"
+	crossorigin="anonymous"
+/>
+<link
+	rel="preconnect"
+	href="https://www.youtube.com/watch?v=BT9h5ifR1tY&t=1s"
+	crossorigin="anonymous"
+/>

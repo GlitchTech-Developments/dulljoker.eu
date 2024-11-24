@@ -1,0 +1,42 @@
+---
+import styles from "~/styles/tailwind.css?url";
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+const { title, description } = Astro.props;
+
+const defaults = {
+	title: {
+		relative: (title: string) =>
+			"%s | gaming, programming, and telling horrible jokes".replace(
+				"%s",
+				title
+			),
+		absolute: "DullJoker | gaming, programming, and telling horrible jokes",
+	},
+	description:
+		"Jesse (DullJoker) - A passionate gamer, tech nerd, programmer and teller of the worst jokes you'll ever hear.",
+};
+
+const pageTitle = title
+	? defaults.title.relative(title)
+	: defaults.title.absolute;
+const pageDesc = description ?? defaults.description;
+---
+
+<html lang="en">
+	<head>
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDesc} />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel="preload" href={styles} type="text/css" as="style" />
+		<link rel="stylesheet" href={styles} type="text/css" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
