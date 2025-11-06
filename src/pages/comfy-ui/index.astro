@@ -1,0 +1,99 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+	<div
+		class="fixed w-full min-h-svh flex flex-col gap-10 items-center justify-center"
+	>
+		<h1 class="text-blue-700 text-4xl font-extrabold">Comfy UI Page</h1>
+
+		<div class="text-center flex flex-col gap-6">
+			<strong>Installing ComfyUI Desktop</strong>
+			<ol
+				class="list-decimal list-inside max-w-sm text-pretty flex flex-col gap-2"
+			>
+				<li>
+					Download the latest version of ComfyUI Desktop from the
+					official website. You can find it at: <a
+						href="https://comfyui.com/download"
+						class="text-blue-500 underline"
+						>https://comfyui.com/download</a
+					>
+				</li>
+				<li>
+					Run the installer and follow the on-screen instructions.
+				</li>
+				<li>
+					Once the installation is complete, launch ComfyUI Desktop.
+				</li>
+			</ol>
+		</div>
+
+		<div class="text-center flex flex-col gap-6">
+			<strong>How to run your first diffusion</strong>
+			<ol
+				class="list-decimal list-inside max-w-sm text-pretty flex flex-col gap-2"
+			>
+				<li>Open ComfyUI Desktop.</li>
+				<li>Click on the "Workflows" button.</li>
+				<li>
+					Select one of the available workflows (Don't use any of the
+					ones that mention "API" as this requires additional
+					configuration).
+				</li>
+				<li>Adjust the parameters as desired (e.g., prompt, steps).</li>
+				<li>Click "Start" to begin the diffusion process.</li>
+			</ol>
+		</div>
+
+		<div class="text-center flex flex-col gap-6">
+			<strong>Example Workflows</strong>
+			<div class="max-w-sm text-pretty flex flex-col gap-4">
+				<span>Here are some example workflows you can try: </span>
+				<ul
+					class="list-none list-inside max-w-sm text-pretty flex flex-col gap-2"
+				>
+					<li>
+						Text/Image to Image: <a
+							href="/comfy-ui/assets/SDXL2.json"
+							class="text-blue-500 underline"
+							>SDXL 2 Example Workflow</a
+						>
+					</li>
+					<li>
+						Image to Video: <a
+							href="/comfy-ui/assets/Wan22_I2V_Native_3_stage.json"
+							class="text-blue-500 underline"
+							>Wan 2.2 Image to Video Workflow</a
+						>
+					</li>
+				</ul>
+
+				<div class="flex flex-col gap-2">
+					To use these workflows, download the JSON files and place
+					them in the ComfyUI workflows directory. This is usually
+					located at:
+					<code
+						class="p-4 overflow-h-hidden overflow-x-scroll whitespace-nowrap"
+						>{
+							`C:\\Users\\<YourUsername>\\Documents\\ComfyUI\\workflows`
+						})</code
+					>
+				</div>
+			</div>
+
+			<div class="text-center flex flex-col gap-6">
+				<strong>Additional Resources</strong>
+				<p class="max-w-sm text-pretty">
+					If you want to use workflows other than the default ones,
+					refer to the official ComfyUI documentation at: <a
+						href="https://openart.ai/workflows/home"
+						class="text-blue-500 underline"
+						>https://openart.ai/workflows/home</a
+					>
+				</p>
+			</div>
+		</div>
+	</div>
+</MainLayout>

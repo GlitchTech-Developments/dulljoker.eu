@@ -9,20 +9,20 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/react": "^3.6.3",
-		"@astrojs/sitemap": "^3.2.1",
-		"@astrojs/tailwind": "6.0.0-alpha.0",
-		"astro": "5.0.0-beta.12",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
+		"@astrojs/react": "^4.4.1",
+		"astro": "5.15.3",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
 	},
 	"devDependencies": {
-		"@astrojs/ts-plugin": "^1.10.4",
-		"@types/react": "^18.3.12",
-		"@types/react-dom": "^18.3.1",
-		"tailwindcss": "^3.4.15",
-		"typescript": "^5.7.2"
+		"@astrojs/ts-plugin": "^1.10.5",
+		"@astrojs/sitemap": "^3.6.0",
+		"@astrojs/check": "^0.9.5",
+		"@types/react": "^19.2.2",
+		"@types/react-dom": "^19.2.2",
+		"@tailwindcss/vite": "^4.1.17",
+		"tailwindcss": "^4.1.17",
+		"typescript": "^5.9.3"
 	},
-	"packageManager": "pnpm@9.12.1+sha512.e5a7e52a4183a02d5931057f7a0dbff9d5e9ce3161e33fa68ae392125b79282a8a8a470a51dfc8a0ed86221442eb2fb57019b0990ed24fab519bf0e1bc5ccfc4"
+	"packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd"
 }
